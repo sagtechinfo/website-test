@@ -1,0 +1,24 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/products/:slug", "destination": "/products.html" },
+    { "source": "/products",       "destination": "/products.html" },
+    { "source": "/rpto",           "destination": "/rpto.html" },
+    { "source": "/blogs",          "destination": "/blogs.html" },
+    { "source": "/salescrm",       "destination": "/salescrm.html" }
+  ],
+  "headers": [
+    {
+      "source": "/admin.html",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    },
+    {
+      "source": "/admin",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ]
+}

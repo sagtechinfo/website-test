@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://sagdrones.com/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Products catalogue -->
+  <url>
+    <loc>https://sagdrones.com/products</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/JHfqfEGEY832dH8wU2FIj8e42o.png</image:loc>
+      <image:title>Beta 610 TC Drone – SAG Drone Technologies</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/eRu3lhJevMrkK1YctwXEMpgZICM.png</image:loc>
+      <image:title>SAG Flash Q20 TC Drone – SAG Drone Technologies</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/oDDN2aWnPwDBOacMrdJxrPj3K8.png</image:loc>
+      <image:title>14S 22000mAh SAG VOLT Plus Battery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/EIRN6BISlMewm9CBHoIWVhtzYak.png</image:loc>
+      <image:title>14S 30000mAh SAG VOLT Plus Battery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/qaHt0hSCGuIztk0xhYkDydSmzM.png</image:loc>
+      <image:title>SiYi MK15 Transmitter Kit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/ccOSG205SKwpOBmfBTiG6vyFe4.jpeg</image:loc>
+      <image:title>SKYRC 3000 Watt Drone Battery Charger</image:title>
+    </image:image>
+  </url>
+
+  <!-- Individual Product Pages -->
+  <url>
+    <loc>https://sagdrones.com/products/beta-610-tc-drone</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/JHfqfEGEY832dH8wU2FIj8e42o.png</image:loc>
+      <image:title>Beta 610 TC Drone – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/sag-flash-q20-tc-drone</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/eRu3lhJevMrkK1YctwXEMpgZICM.png</image:loc>
+      <image:title>SAG Flash Q20 TC Drone – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/14s-22000mah-battery</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/oDDN2aWnPwDBOacMrdJxrPj3K8.png</image:loc>
+      <image:title>14S 22000mAh SAG VOLT Plus Battery – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/14s-30000mah-battery</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/EIRN6BISlMewm9CBHoIWVhtzYak.png</image:loc>
+      <image:title>14S 30000mAh SAG VOLT Plus Battery – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/k3a-pro-fc-kit</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/dRPDPsr5jgfAEPLI0RIrENpcIoo.webp</image:loc>
+      <image:title>K3A Pro FC Kit – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/vk-v9-ag-fc-kit</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/0Jj398ugeqPzDZmnM5qbUhQZs.png</image:loc>
+      <image:title>VK V9 AG FC Kit – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/hobbywing-8l-pump</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/7Sk32BzwB1Yj3AHjFfUIzNMK0.jpg</image:loc>
+      <image:title>Hobbywing 8L/min Pump – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/skyrc-3000w-charger</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/ccOSG205SKwpOBmfBTiG6vyFe4.jpeg</image:loc>
+      <image:title>SKYRC 3000 Watt Charger – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/jiyi-kpp-fc-kit</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/VDfEexOOoRK6EOM1ybMGwFQgm4.jpg</image:loc>
+      <image:title>JiYi K++ Full FC Kit – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/skydroid-t12-rc-kit</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/tKmkl1E8aOyMTjsSN1a4jFh4fGY.jpeg</image:loc>
+      <image:title>Skydroid T12 Full RC Kit – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/hobbywing-x8-motor-combo</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/aYSQ4cQ8alqgSNu26gG4YI9gAVY.jpg</image:loc>
+      <image:title>Hobbywing CW X8 Motor Combo – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sagdrones.com/products/siyi-mk15-transmitter-kit</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://framerusercontent.com/images/qaHt0hSCGuIztk0xhYkDydSmzM.png</image:loc>
+      <image:title>SiYi MK15 Transmitter Kit – SAG Drone Technologies</image:title>
+    </image:image>
+  </url>
+
+  <!-- RPTO – Drone Pilot Training -->
+  <url>
+    <loc>https://sagdrones.com/rpto</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blogs -->
+  <url>
+    <loc>https://sagdrones.com/blogs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
