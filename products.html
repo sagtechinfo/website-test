@@ -127,21 +127,56 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .skel-line.w40{width:40%}
 .skel-line.w80{width:80%}
 
-/* CATALOGUE */
-.cat-header{max-width:1100px;margin:0 auto;padding:28px 60px 0;text-align:center}
-@media(max-width:900px){.cat-header{padding:20px 16px 0}}
-.cat-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3rem);color:var(--white);margin-bottom:8px}
-.cat-sub{color:var(--muted);font-size:0.95rem;margin-bottom:28px}
-.cat-filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px}
-.cat-filter-btn{background:var(--card);border:1.5px solid var(--border);color:var(--muted);font-size:0.78rem;font-weight:700;padding:7px 18px;border-radius:40px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
-.cat-filter-btn:hover,.cat-filter-btn.active{background:var(--blue);border-color:var(--blue);color:#fff}
-.cat-grid{max-width:1100px;margin:0 auto;padding:0 60px 80px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
-@media(max-width:900px){.cat-grid{padding:0 16px 60px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}}
+/* CATALOGUE — hero banner */
+.cat-hero{width:100%;background:linear-gradient(120deg,#dbeeff 0%,#eaf4ff 55%,#c9e4ff 100%);padding:32px 60px;display:flex;align-items:center;justify-content:space-between;gap:32px;overflow:hidden;position:relative;min-height:200px}
+@media(max-width:900px){.cat-hero{padding:24px 16px;flex-direction:column;gap:16px;min-height:auto}}
+.cat-hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;font-size:0.68rem;font-weight:800;padding:5px 14px;border-radius:20px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.cat-hero-badge::before{content:'★';font-size:0.75rem}
+.cat-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,4vw,2.8rem);color:#0d1b2a;line-height:1.1;margin-bottom:10px}
+.cat-hero-title span{color:var(--blue)}
+.cat-hero-desc{color:var(--muted);font-size:0.87rem;line-height:1.6;max-width:400px;margin-bottom:18px}
+.cat-hero-icons{display:flex;gap:20px;flex-wrap:wrap}
+.cat-hero-icon-item{display:flex;align-items:center;gap:7px;font-size:0.8rem;color:var(--text);font-weight:600}
+.cat-hero-icon-item svg{flex-shrink:0}
+.cat-hero-img-wrap{flex-shrink:0;width:300px;position:relative;display:flex;align-items:center;justify-content:center}
+@media(max-width:900px){.cat-hero-img-wrap{width:180px}}
+.cat-hero-img{width:100%;object-fit:contain;filter:drop-shadow(0 12px 32px rgba(26,111,181,0.18))}
+.cat-hero-trust{position:absolute;bottom:14px;right:14px;background:#fff;border:2px solid var(--blue);border-radius:50%;width:72px;height:72px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:0.58rem;font-weight:800;color:var(--blue);text-align:center;line-height:1.2;text-transform:uppercase}
+@media(max-width:900px){.cat-hero-trust{display:none}}
+
+/* CATALOGUE — main layout */
+.cat-layout{max-width:1160px;margin:0 auto;padding:28px 60px 80px;display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:start}
+@media(max-width:900px){.cat-layout{grid-template-columns:1fr;padding:16px 16px 60px;gap:16px}}
+
+/* Sidebar */
+.cat-sidebar{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;position:sticky;top:88px}
+.cat-search-wrap{position:relative;margin-bottom:20px}
+.cat-search{width:100%;padding:10px 14px 10px 38px;border:1.5px solid var(--border);border-radius:40px;background:#f5f9ff;font-family:'DM Sans',sans-serif;font-size:0.83rem;color:var(--text);outline:none;transition:border-color .2s}
+.cat-search:focus{border-color:var(--blue)}
+.cat-search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:1rem;pointer-events:none}
+.cat-sidebar-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.cat-sidebar-cats{display:flex;flex-direction:column;gap:4px}
+.cat-filter-btn{display:flex;align-items:center;justify-content:space-between;width:100%;background:transparent;border:none;padding:9px 12px;border-radius:10px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.84rem;font-weight:600;color:var(--muted);text-align:left;transition:all .2s}
+.cat-filter-btn:hover{background:var(--card2);color:var(--text)}
+.cat-filter-btn.active{background:var(--blue);color:#fff}
+.cat-filter-btn .cat-count{font-size:0.72rem;font-weight:800;background:rgba(255,255,255,0.25);padding:2px 8px;border-radius:20px;min-width:28px;text-align:center}
+.cat-filter-btn:not(.active) .cat-count{background:var(--card2);color:var(--muted)}
+.cat-filter-btn.active .cat-count{background:rgba(255,255,255,0.3);color:#fff}
+
+/* Right content */
+.cat-right{}
+.cat-top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:8px}
+.cat-showing{font-size:0.88rem;color:var(--muted)}
+.cat-showing strong{color:var(--text);font-weight:700}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+@media(max-width:600px){.cat-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}}
 .cat-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s}
 .cat-card:hover{border-color:var(--blue);transform:translateY(-5px);box-shadow:0 14px 36px rgba(133,201,255,0.16)}
-.cat-img-wrap{width:100%;aspect-ratio:4/3;background:#edf4ff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.cat-img-wrap{width:100%;aspect-ratio:4/3;background:#edf4ff;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
 .cat-img{width:100%;height:100%;object-fit:contain;padding:16px;transition:transform .4s ease}
 .cat-card:hover .cat-img{transform:scale(1.06)}
+.cat-stock-dot{position:absolute;bottom:10px;left:12px;display:flex;align-items:center;gap:5px;font-size:0.68rem;font-weight:700;color:#27ae60}
+.cat-stock-dot::before{content:'';width:7px;height:7px;border-radius:50%;background:#2ecc71;display:block}
 .cat-body{padding:12px 14px 16px;flex:1;display:flex;flex-direction:column}
 .cat-badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
 .cat-badge{font-size:0.62rem;font-weight:800;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.04em}
@@ -226,23 +261,68 @@ footer{background:#edf4ff;border-top:1px solid var(--border);padding:64px 60px 3
      CATALOGUE MODE  (shown when URL = /products)
      ═══════════════════════════════════════════════════════ -->
 <div id="catalogueLayout" style="display:none">
-  <div class="cat-header">
-    <h1 class="cat-title">Our Products</h1>
-    <p class="cat-sub">DGCA-certified drones, batteries, controllers & accessories</p>
-    <!-- Filter bar -->
-    <div class="cat-filters" id="catFilters"></div>
+  <!-- HERO BANNER -->
+  <div class="cat-hero">
+    <div>
+      <div class="cat-hero-badge">Popular Products</div>
+      <h1 class="cat-hero-title">Top Picks.<br><span>Built for Performance.</span></h1>
+      <p class="cat-hero-desc">Explore DGCA-certified agricultural drones, premium components, batteries, motors, and accessories trusted by professionals.</p>
+      <div class="cat-hero-icons">
+        <div class="cat-hero-icon-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Drones
+        </div>
+        <div class="cat-hero-icon-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          Batteries & Chargers
+        </div>
+        <div class="cat-hero-icon-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          Components
+        </div>
+        <div class="cat-hero-icon-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          Accessories
+        </div>
+      </div>
+    </div>
+    <div class="cat-hero-img-wrap">
+      <img class="cat-hero-img" src="https://framerusercontent.com/images/JHfqfEGEY832dH8wU2FIj8e42o.png" alt="SAG Agricultural Drone"/>
+      <div class="cat-hero-trust">✓ QUALITY<br>YOU CAN<br>TRUST</div>
+    </div>
   </div>
-  <!-- Skeleton grid shown while loading -->
-  <div class="cat-grid" id="catSkeletonGrid">
-    <div class="skeleton" style="height:260px;border-radius:14px"></div>
-    <div class="skeleton" style="height:260px;border-radius:14px"></div>
-    <div class="skeleton" style="height:260px;border-radius:14px"></div>
-    <div class="skeleton" style="height:260px;border-radius:14px"></div>
-    <div class="skeleton" style="height:260px;border-radius:14px"></div>
-    <div class="skeleton" style="height:260px;border-radius:14px"></div>
+
+  <!-- MAIN LAYOUT: sidebar + grid -->
+  <div class="cat-layout">
+    <!-- Sidebar -->
+    <aside class="cat-sidebar">
+      <div class="cat-search-wrap">
+        <span class="cat-search-icon">🔍</span>
+        <input class="cat-search" id="catSearch" type="text" placeholder="Search products..." oninput="searchCatalogue(this.value)"/>
+      </div>
+      <div class="cat-sidebar-label">Categories</div>
+      <div class="cat-sidebar-cats" id="catFilters"></div>
+    </aside>
+
+    <!-- Right -->
+    <div class="cat-right">
+      <!-- Top bar: showing count -->
+      <div class="cat-top-bar">
+        <div class="cat-showing" id="catShowing">Showing <strong>0</strong> of <strong>0</strong> products</div>
+      </div>
+      <!-- Skeleton grid shown while loading -->
+      <div class="cat-grid" id="catSkeletonGrid">
+        <div class="skeleton" style="height:260px;border-radius:14px"></div>
+        <div class="skeleton" style="height:260px;border-radius:14px"></div>
+        <div class="skeleton" style="height:260px;border-radius:14px"></div>
+        <div class="skeleton" style="height:260px;border-radius:14px"></div>
+        <div class="skeleton" style="height:260px;border-radius:14px"></div>
+        <div class="skeleton" style="height:260px;border-radius:14px"></div>
+      </div>
+      <!-- Actual product grid -->
+      <div class="cat-grid" id="catGrid" style="display:none"></div>
+    </div>
   </div>
-  <!-- Actual product grid -->
-  <div class="cat-grid" id="catGrid" style="display:none"></div>
 </div>
 
 <!-- SKELETON WHILE LOADING (product detail) -->
@@ -730,54 +810,6 @@ function productLink(p) {
   return '/products/' + (p.slug || p.id);
 }
 
-function renderCatalogue(products) {
-  document.getElementById('skeletonLayout').style.display = 'none';
-  document.getElementById('catalogueLayout').style.display = '';
-  document.getElementById('breadcrumbSlug').style.display = 'none';
-  document.title = 'Products – SAG Drone Technologies';
-  var cats = ['All'].concat([...new Set(products.map(function(p){ return p.category || 'Other'; }))]);
-  document.getElementById('catFilters').innerHTML = cats.map(function(c){
-    return '<button class="cat-filter-btn'+(c==='All'?' active':'')+'" onclick="filterCatalogue(\''+c+'\')" id="cfbtn-'+c.replace(/[^a-z0-9]/gi,'_')+'">'+c+'</button>';
-  }).join('');
-  renderCatalogueGrid(products);
-}
-
-function filterCatalogue(cat) {
-  activeFilter = cat;
-  document.querySelectorAll('.cat-filter-btn').forEach(function(b){ b.classList.remove('active'); });
-  var btn = document.getElementById('cfbtn-' + cat.replace(/[^a-z0-9]/gi,'_'));
-  if (btn) btn.classList.add('active');
-  var filtered = cat === 'All' ? allProducts : allProducts.filter(function(p){ return (p.category||'Other') === cat; });
-  renderCatalogueGrid(filtered);
-}
-
-function renderCatalogueGrid(products) {
-  var grid = document.getElementById('catGrid');
-  document.getElementById('catSkeletonGrid').style.display = 'none';
-  grid.style.display = '';
-  if (!products.length) {
-    grid.innerHTML = '<p style="color:var(--muted);grid-column:1/-1;text-align:center;padding:40px">No products found.</p>';
-    return;
-  }
-  grid.innerHTML = products.map(function(p){
-    var price = Number(p.price);
-    var orig = p.original_price ? Number(p.original_price) : 0;
-    var disc = orig > price ? Math.round((orig-price)/orig*100) : 0;
-    var badges = (p.is_new ? '<span class="cat-badge new">New</span>' : '') +
-                 (p.is_offer ? '<span class="cat-badge offer">Offer</span>' : '');
-    return '<a class="cat-card" href="'+productLink(p)+'">' +
-      '<div class="cat-img-wrap"><img class="cat-img" src="'+(p.image||'')+'" alt="'+p.name+'" loading="lazy" onerror="this.parentNode.innerHTML=\'<div style=&quot;font-size:3rem;color:#85c9ff&quot;>🚁</div>\'"></div>' +
-      '<div class="cat-body">' +
-        (badges ? '<div class="cat-badges">'+badges+'</div>' : '') +
-        '<div class="cat-name">'+p.name+'</div>' +
-        '<div class="cat-price-row"><span class="cat-price">₹'+price.toLocaleString('en-IN')+'</span>' +
-        (orig > price ? '<span class="cat-orig">₹'+orig.toLocaleString('en-IN')+'</span>' : '') +
-        (disc ? '<span class="cat-off">'+disc+'% off</span>' : '') +
-        '</div></div></a>';
-  }).join('');
-}
-
-function renderProduct(p) {
   document.getElementById('skeletonLayout').style.display = 'none';
   document.getElementById('productLayout').style.display = '';
   document.getElementById('breadcrumbSlug').style.display = '';
